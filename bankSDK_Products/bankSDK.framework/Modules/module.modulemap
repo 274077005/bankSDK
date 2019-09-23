@@ -1,0 +1,6 @@
+framework module bankSDK {
+  umbrella header "bankSDK.h"
+
+  export *
+  module * { export * }
+}
