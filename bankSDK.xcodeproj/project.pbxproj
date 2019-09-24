@@ -23,13 +23,13 @@
 
 /* Begin PBXBuildFile section */
 		843417E12338806E00D25932 /* bankSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 843417DF2338806E00D25932 /* bankSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		843417EA2338809000D25932 /* skyerIPACode.h in Headers */ = {isa = PBXBuildFile; fileRef = 843417E72338809000D25932 /* skyerIPACode.h */; };
-		843417EB2338809000D25932 /* skhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 843417E82338809000D25932 /* skhook.h */; };
-		843417EC2338809000D25932 /* skyerIPACode.m in Sources */ = {isa = PBXBuildFile; fileRef = 843417E92338809000D25932 /* skyerIPACode.m */; };
+		843417EA2338809000D25932 /* ipaCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 843417E72338809000D25932 /* ipaCode.h */; };
+		843417EB2338809000D25932 /* ipaHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 843417E82338809000D25932 /* ipaHook.h */; };
+		843417EC2338809000D25932 /* ipaCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 843417E92338809000D25932 /* ipaCode.m */; };
 		843418282338AD5500D25932 /* currentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843418262338AD5500D25932 /* currentViewController.m */; };
 		843418292338AD5500D25932 /* currentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 843418272338AD5500D25932 /* currentViewController.h */; };
-		8434182C2338AE2500D25932 /* alertViewClassMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 8434182A2338AE2500D25932 /* alertViewClassMethod.h */; };
-		8434182D2338AE2500D25932 /* alertViewClassMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434182B2338AE2500D25932 /* alertViewClassMethod.m */; };
+		8451B7E6233A499100E83875 /* ipaShowVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 8451B7E4233A499100E83875 /* ipaShowVC.h */; };
+		8451B7E7233A499100E83875 /* ipaShowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8451B7E5233A499100E83875 /* ipaShowVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,13 +46,13 @@
 		843417DC2338806E00D25932 /* bankSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = bankSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		843417DF2338806E00D25932 /* bankSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bankSDK.h; sourceTree = "<group>"; };
 		843417E02338806E00D25932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		843417E72338809000D25932 /* skyerIPACode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = skyerIPACode.h; sourceTree = "<group>"; };
-		843417E82338809000D25932 /* skhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = skhook.h; sourceTree = "<group>"; };
-		843417E92338809000D25932 /* skyerIPACode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = skyerIPACode.m; sourceTree = "<group>"; };
+		843417E72338809000D25932 /* ipaCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ipaCode.h; sourceTree = "<group>"; };
+		843417E82338809000D25932 /* ipaHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ipaHook.h; sourceTree = "<group>"; };
+		843417E92338809000D25932 /* ipaCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ipaCode.m; sourceTree = "<group>"; };
 		843418262338AD5500D25932 /* currentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = currentViewController.m; sourceTree = "<group>"; };
 		843418272338AD5500D25932 /* currentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = currentViewController.h; sourceTree = "<group>"; };
-		8434182A2338AE2500D25932 /* alertViewClassMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alertViewClassMethod.h; sourceTree = "<group>"; };
-		8434182B2338AE2500D25932 /* alertViewClassMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = alertViewClassMethod.m; sourceTree = "<group>"; };
+		8451B7E4233A499100E83875 /* ipaShowVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ipaShowVC.h; sourceTree = "<group>"; };
+		8451B7E5233A499100E83875 /* ipaShowVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ipaShowVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,13 +85,13 @@
 		843417DE2338806E00D25932 /* bankSDK */ = {
 			isa = PBXGroup;
 			children = (
-				8434182A2338AE2500D25932 /* alertViewClassMethod.h */,
-				8434182B2338AE2500D25932 /* alertViewClassMethod.m */,
 				843418272338AD5500D25932 /* currentViewController.h */,
 				843418262338AD5500D25932 /* currentViewController.m */,
-				843417E82338809000D25932 /* skhook.h */,
-				843417E72338809000D25932 /* skyerIPACode.h */,
-				843417E92338809000D25932 /* skyerIPACode.m */,
+				843417E82338809000D25932 /* ipaHook.h */,
+				843417E72338809000D25932 /* ipaCode.h */,
+				843417E92338809000D25932 /* ipaCode.m */,
+				8451B7E4233A499100E83875 /* ipaShowVC.h */,
+				8451B7E5233A499100E83875 /* ipaShowVC.m */,
 				843417DF2338806E00D25932 /* bankSDK.h */,
 				843417E02338806E00D25932 /* Info.plist */,
 			);
@@ -106,10 +106,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				843417E12338806E00D25932 /* bankSDK.h in Headers */,
+				8451B7E6233A499100E83875 /* ipaShowVC.h in Headers */,
 				843418292338AD5500D25932 /* currentViewController.h in Headers */,
-				8434182C2338AE2500D25932 /* alertViewClassMethod.h in Headers */,
-				843417EB2338809000D25932 /* skhook.h in Headers */,
-				843417EA2338809000D25932 /* skyerIPACode.h in Headers */,
+				843417EB2338809000D25932 /* ipaHook.h in Headers */,
+				843417EA2338809000D25932 /* ipaCode.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,9 +204,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8434182D2338AE2500D25932 /* alertViewClassMethod.m in Sources */,
+				8451B7E7233A499100E83875 /* ipaShowVC.m in Sources */,
 				843418282338AD5500D25932 /* currentViewController.m in Sources */,
-				843417EC2338809000D25932 /* skyerIPACode.m in Sources */,
+				843417EC2338809000D25932 /* ipaCode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

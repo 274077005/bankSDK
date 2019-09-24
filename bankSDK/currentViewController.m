@@ -10,8 +10,9 @@
 
 @implementation currentViewController
 
-+(UIViewController *)skyerVisibleViewController {
++(UIViewController *)currentVisibleViewController {
     UIViewController *rootViewController =[[[[UIApplication sharedApplication] delegate] window] rootViewController];
+    
     return [self getVisibleViewControllerFromRootView:rootViewController];
 }
 
@@ -28,7 +29,5 @@
         }
     }
 }
-
-
 
 @end

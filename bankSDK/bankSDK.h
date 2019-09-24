@@ -1,10 +1,4 @@
-//
-//  bankSDK.h
-//  bankSDK
-//
-//  Created by skyer on 2019/9/23.
-//  Copyright © 2019 skyer. All rights reserved.
-//
+
 
 #import <UIKit/UIKit.h>
 

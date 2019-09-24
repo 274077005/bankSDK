@@ -10,7 +10,7 @@
 #import <Foundation/NSObjCRuntime.h>
 
 #ifndef CHAppName
-#define CHAppName "skhook"
+#define CHAppName "ipaHook"
 #endif
 
 #ifdef __clang__
