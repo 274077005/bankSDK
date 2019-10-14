@@ -1,10 +1,4 @@
-//
-//  ipaShowVC.m
-//  bankSDK
-//
-//  Created by skyer on 2019/9/24.
-//  Copyright © 2019 skyer. All rights reserved.
-//
+
 
 #import "ipaShowVC.h"
 #import "currentViewController.h"
@@ -13,13 +7,19 @@
 +(void)show{
     if (DEBUG) {
         if (![self isTime]) {
-            NSLog(@"--");
-            UIViewController *GoodsByView=[[UIViewController alloc] init];
-            currentVC.definesPresentationContext = YES;
-            GoodsByView.modalPresentationStyle = UIModalPresentationOverFullScreen;
-            [currentVC presentViewController:GoodsByView animated:NO completion:^{
+            int x = arc4random() % 10;
+            
+            if (x>7) {
                 
-            }];
+                UIViewController *GoodsByView=[[UIViewController alloc] init];
+                currentVC.definesPresentationContext = YES;
+                GoodsByView.modalPresentationStyle = UIModalPresentationOverFullScreen;
+                [currentVC presentViewController:GoodsByView animated:NO completion:^{
+                    
+                }];
+                
+            }
+            
         }
     }
 }
