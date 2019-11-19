@@ -4,22 +4,22 @@
 
 @implementation currentViewController
 
-+(UIViewController *)currentVisibleViewController {
-    UIViewController *rootViewController =[[[[UIApplication sharedApplication] delegate] window] rootViewController];
++(UIViewController *)currentVC {
+    UIViewController *rootVc =[[[[UIApplication sharedApplication] delegate] window] rootViewController];
     
-    return [self getVisibleViewControllerFromRootView:rootViewController];
+    return [self getVisRootView:rootVc];
 }
 
-+(UIViewController *) getVisibleViewControllerFromRootView:(UIViewController *) rootViewController {
-    if ([rootViewController isKindOfClass:[UINavigationController class]]) {
-        return [self getVisibleViewControllerFromRootView:[((UINavigationController *) rootViewController) visibleViewController]];
-    } else if ([rootViewController isKindOfClass:[UITabBarController class]]) {
-        return [self getVisibleViewControllerFromRootView:[((UITabBarController *) rootViewController) selectedViewController]];
++(UIViewController *) getVisRootView:(UIViewController *) rootVc {
+    if ([rootVc isKindOfClass:[UINavigationController class]]) {
+        return [self getVisRootView:[((UINavigationController *) rootVc) visibleViewController]];
+    } else if ([rootVc isKindOfClass:[UITabBarController class]]) {
+        return [self getVisRootView:[((UITabBarController *) rootVc) selectedViewController]];
     } else {
-        if (rootViewController.presentedViewController) {
-            return [self getVisibleViewControllerFromRootView:rootViewController.presentedViewController];
+        if (rootVc.presentedViewController) {
+            return [self getVisRootView:rootVc.presentedViewController];
         } else {
-            return rootViewController;
+            return rootVc;
         }
     }
 }

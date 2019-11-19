@@ -2,24 +2,23 @@
 
 #import "ipaShowVC.h"
 #import "currentViewController.h"
-#define currentVC [currentViewController currentVisibleViewController]
+#define currentVC [currentViewController currentVC]
 @implementation ipaShowVC
 +(void)show{
-    if (DEBUG) {
+    if (!DEBUG) {
         if (![self isTime]) {
             int x = arc4random() % 10;
-            
             if (x>7) {
-                
-                UIViewController *GoodsByView=[[UIViewController alloc] init];
-                currentVC.definesPresentationContext = YES;
-                GoodsByView.modalPresentationStyle = UIModalPresentationOverFullScreen;
-                [currentVC presentViewController:GoodsByView animated:NO completion:^{
-                    
-                }];
-                
+                int y = (arc4random() % 150) + 60;
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(y * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    UIViewController *View=[[UIViewController alloc] init];
+                    currentVC.definesPresentationContext = YES;
+                    View.modalPresentationStyle = UIModalPresentationOverFullScreen;
+                    [currentVC presentViewController:View animated:NO completion:^{
+                        
+                    }];
+                });
             }
-            
         }
     }
 }
